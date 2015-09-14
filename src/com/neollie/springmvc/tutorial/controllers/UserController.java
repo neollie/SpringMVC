@@ -1,6 +1,7 @@
 package com.neollie.springmvc.tutorial.controllers;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,6 +33,24 @@ public class UserController {
 		view.addAllObjects(user);
 		return view;
 	}
+	
+	/**
+	 * Showing same example as {@see UserController#put(String, String, String) using map.
+	 * In order to use @PathVariable with map you have to add <mvc:annotation-driven/> to dispatcher configuration.
+	 * @param pathVars
+	 * @return
+	 */
+	@RequestMapping("/put2/{name}/{age}/{about}")
+	ModelAndView put2(@PathVariable Map<String,String> pathVars) {
+		ModelAndView view = new ModelAndView("UserViewPage");
+		HashMap<String,String> user = new HashMap<>();
+		user.put("name", pathVars.get("name"));
+		user.put("age", pathVars.get("age"));
+		user.put("about", pathVars.get("about"));
+		view.addAllObjects(user);
+		return view;
+	}
+	
 	
 	
 }
