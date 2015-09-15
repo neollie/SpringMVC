@@ -13,7 +13,7 @@
 		</p>
 		<input type="submit" value="Submit">
 	</form>
-	
+
 	<h3>Form triggering /FirstSpringMVCProject/user/put4 method</h3>
 	<form action="/FirstSpringMVCProject/user/put4" method="post">
 		<p>
@@ -27,5 +27,6 @@
 		</p>
 		<input type="submit" value="Submit">
 	</form>
+
 </body>
 </html>

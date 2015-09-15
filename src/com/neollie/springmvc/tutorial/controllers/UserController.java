@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.neollie.springmvc.tutorial.domain.Car;
+
 @Controller
 @RequestMapping("/user")
 public class UserController {
@@ -76,8 +78,9 @@ public class UserController {
 	 * Show that we can also accept RequestParam s at once.
 	 */
 	@RequestMapping(value = "/put4", method = RequestMethod.POST)
-	public ModelAndView put5(@RequestParam Map<String,String> params) {
+	public ModelAndView put4(@RequestParam Map<String,String> params) {
 		return new ModelAndView("CreateUserSuccess").addObject("name", params.get("name"));
 	}
+	
 
 }
