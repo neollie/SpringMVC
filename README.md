@@ -3,11 +3,11 @@ Project for learning Spring MVC following not strictly Spring MVC Tutorials  on 
 
 ## Commits / Tutorial Outline
 
-### Step-9 
+### Step-9 Spring MVC Tutorials 09 - @PathVariable annotation in detail (A URI-Template concept )
 - [video part 9][mvc-video-9] 
 - add method put2 to UserController controller with @PathVariable using map 
 
-### Step-10 
+### Step-10 Spring MVC Tutorials 10 - Handling an HTML form using @RequestParam annotation
 - [video part 10][mvc-video-10] 
 - create from for creating user CreateUserFrom.jsp
 - Create success page for succesfull creation of new user CreateUserSuccess.jsp
